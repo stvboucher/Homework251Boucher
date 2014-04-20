@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/nologo_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo_nologo"
+    />
+            
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_marginTop="8dp"        
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nologo_image_view"
+        android:layout_alignBaseline="@id/nologo_image_view"        
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/control_editext" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_marginTop="8dp"        
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBaseline="@id/nologo_image_view"        
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="@drawable/control_editext" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password_edit_text"
+		android:paddingLeft="40dp"
+		android:paddingRight="40dp"
+        android:text="@string/sign_in"
+        android:background="@drawable/control_button" />
+        
+</RelativeLayout>
